@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>Rock Paper Scissor Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <script src="https://kit.fontawesome.com/021c70449c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
+    <div class="container">
+    <a class="navbar-brand" href="#">
+        <h1 class="logo-heading">Ga<span class="span01">ming</span></h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link ml-4" href="#" id="home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-4" href="#" id="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-4" href="#" id="games">Games</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ml-4 mr-4" href="#" id="profile">Profile</a>
+        </li>
+        <div class="input-group ml-2 mb-1">
+            <input type="text" class="form-control input01" placeholder="Search here" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary btn01" type="button" id="button-addon2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+      </ul>
+      <span class="navbar-text">
+        <button class="button01 ml-3">Wallet:400</button>
+      </span>
+    </div>
+</div>
+  </nav>
+  <div class="bg-container01 pt-5">
+    <div class="container">
+        <div class="d-flex flex-row mb-4">
+            <p class="para01 mr-3">Home</p>
+            <p class="para01"> ></p>
+            <h1 class="game01 ml-3">Tos Game</h1>
+        </div>
+        <div class="text-center">
+            <h1 class="heading01">Coin Flip Game</h1>
+            <p class ="description mt-4">We are here to provide a place special for electronic devices. Although we only operated for 2 years but we always provide the best service for customers and all the sellers who use our website. With the hope that it can help improve a better life using various electronic goods with the latest technology, we are all ears to any suggestion from our dear customers</p>
+        </div>
+      </div>
+      <div class="container-fluid pr-5 pl-5">
+        <img src="https://res.cloudinary.com/dqrttxm5s/image/upload/v1687172270/desktop-wallpaper-rock-paper-scissors_aaylnp.jpg" class="image01 mt-3 mb-5">
+    </div>
+  </div>
+    <div class="bg-container001 pt-5 pb-5 mb-5">
+    <div class="container">
+      <div class="text-center">
+        <button type="button" class="btn btn-primary button03">Your Binding Amount:</button>
+      </div>
+        <div class="images">
+          <div class="computer">
+            <img src="./stoneComputer.png">
+          </div>
+          <div class="player">
+            <img src="./scissorsPlayer.png">
+          </div>
+        </div>
+        <div class="text-center">
+          <p class="mt-3 results" id="results"></p>
+        </div>
+        <div class="points">
+          COMPUTER <span class="computerPoints">0</span> /
+          <span class="playerPoints">0</span> PLAYER
+        </div>
+        <div class="message pt-5">CHOOSE YOUR CHOICE</div>
+          <div class="options">
+            <div class="d-flex flex-row justify-content-center">
+          <button type="button" class="mt-4 mr-3">stone</button>
+          <button type="button" class="mt-4 mr-3">paper</button>
+          <button type="button" class="mt-4">scissors</button>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-center mt-5">
+        <select id="inputState" class="form-control d1">
+          <option selected>Place Your Bid</option>
+          <option>Place Your Bid: 100</option>
+          <option>Place Your Bid: 200</option>
+          <option>Place Your Bid: 400</option>
+          <option>Place Your Bid: 500</option>
+          <option>Place Your Bid: 1000</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="container pb-5">
+    <div class="text-center">
+      <h1 class="heading02 mt-5 mb-3">How to play</h1>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item video01" src="https://www.youtube.com/embed/q7DZnWb0Ukw" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="bg-contaner02 pt-4">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12 col-md-5">
+                <h6 class="heading03 pt-4">Game’s  Services</h6>
+                <h2 class="heading04">Upcoming games</h2>
+            </div>
+            <div class="col-12 col-md-7">
+                <p class="para02">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme mt-5">
+            <div class="item">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dqrttxm5s/image/upload/v1685833458/007_zmjrrt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Party Game</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                      <button class="button06">View 
+                        <span><i class="fas fa-arrow-right"></i></span>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="item"> <div class="card">
+                <img src="https://res.cloudinary.com/dqrttxm5s/image/upload/v1685833609/010_tttg9z.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Music Game</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                  <button class="button06">View 
+                    <span><i class="fas fa-arrow-right"></i></span>
+                  </button>
+                </div>
+              </div>
+        </div>
+            <div class="item"> <div class="card">
+                <img src="https://res.cloudinary.com/dqrttxm5s/image/upload/v1685853300/manu01_aoj7dq.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Special</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                  <button class="button06">View 
+                    <span><i class="fas fa-arrow-right"></i></span>
+                  </button>
+                </div>
+              </div>
+        </div>
+            <div class="item"> <div class="card">
+                <img src="https://res.cloudinary.com/dqrttxm5s/image/upload/v1685833306/006_o5d6lv.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Company </h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                  <button class="button06">View 
+                    <span><i class="fas fa-arrow-right"></i></span>
+                  </button>
+                </div>
+              </div>
+        </div>
+            <div class="item"> <div class="card">
+                <img src="https://res.cloudinary.com/dqrttxm5s/image/upload/v1685856255/card04_eetfwj.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card Games</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                  <button class="button06">View 
+                    <span><i class="fas fa-arrow-right"></i></span>
+                  </button>
+                </div>
+              </div>
+        </div>
+            <div class="item"> <div class="card">
+                <img src="https://res.cloudinary.com/dqrttxm5s/image/upload/v1685853728/manu06_a92zwp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Coin Games</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                  <button class="button06">View 
+                    <span><i class="fas fa-arrow-right"></i></span>
+                  </button>
+                </div>
+              </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="bg-container03 d-flex flex-row justify-content-center pb-5">
+  <div class="container">
+              <div class="d-flex flex-row mt-5">
+                  <img src="https://res.cloudinary.com/dqrttxm5s/image/upload/v1686816373/Newsletter_oxzjzi.svg" class="pt-1">
+                  <div>
+                      <h1 class="pl-3 heading05 pt-4">Join our newsletter now!</h1>
+                      <p class="para04 pl-3">Register now and get our latest updates and promos.</p>
+                  </div>
+              </div>
+              <div class="input-group  mt-3">
+                  <input type="text" class="form-control input02" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary button07" type="button" id="button-addon2">Join</button>
+                  </div>
+                </div>
+          </div>
+      </div>
+      <div class="bg-container05">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 mt-5">
+                    <h1 class="information">Information</h1>
+                    <p class="para003">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+                    <i class="fa-brands fa-facebook icon002 mr-3"></i>
+                    <i class="fa-brands fa-twitter icon002 mr-3"></i>
+                    <i class="fa-brands fa-instagram icon002 mr-3"></i>
+                    <i class="fa-brands fa-linkedin icon002 mr-3"></i>
+                </div>
+                <div class="col-12 col-md-3 mt-5">
+                    <h1 class="information">Quick Links</h1>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">Home</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">About Us</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">Our Team Work</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">Services</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">Work Gallery</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mt-5">
+                    <h1 class="information">SiteLinks</h1>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">Privacy Ploicy</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">Disclaimer</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">Terms & Conditions</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">GDPR</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-caret-right icon003 mt-2 mb-3"></i>
+                        <h1 class="home pl-2">Cookies Used</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mt-5">
+                    <h1 class="information">Stay Tuned With Us</h1>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-map-pin icon003 mt-3 mb-3"></i>
+                        <h1 class="home01 pl-2">Gresik United East Java Nggepeng Village 6312</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-envelope icon003 mt-3 mb-3"></i>
+                        <h1 class="home01 pl-2">Hello@Email.com</h1>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-square-phone icon003 mt-3 mb-3"></i>
+                        <h1 class="home02 pl-2">( +62 ) 123 456 789</h1>
+                    </div>
+                </div>
+            </div>
+            <hr class="hor"/>
+        <div class="text-center">
+            <h1 class="copyright pb-5">Allright Reserved - Nexprism</h1>
+        </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+</body>
+</html>
